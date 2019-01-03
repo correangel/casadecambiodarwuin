@@ -1,0 +1,873 @@
+body{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* PAGINA DE RETORNO */
+
+.container1{
+    width: 100%;
+    
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container1 .text{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;
+}
+
+.container1 .text h3{
+    font-size:2em;
+}
+
+
+.container1 .volver{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;
+}
+
+.container1 .volver a{
+    text-decoration: none;
+}
+
+.container1 .volver a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/* PAGINA PRINCIPAL */
+
+.conprincipal{
+    width: 90%;
+    max-width: 1366px;
+    margin: auto;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* HEADER */
+
+header{
+    /* background: #1a535c; */
+    background: url(../images/head1.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 5px #ff6b6f solid;
+
+    /* Flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header .logo{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    align-items: center;
+}
+
+header .logo .imglogo{
+    border-radius: 30px;
+    border: 2px #ff6b6f solid;
+}
+
+header .logo h1{
+    background: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+header .logo .tit{
+    font-family: 'Quicksand';
+}
+
+header .logo .tit:hover{
+    color: #ff6b6f;
+}
+
+header .titulo a, header .menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .menu{
+    width: 50%;
+    
+    /* Flex */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .menu a{
+    padding: 0 15px;
+    text-align: center;
+
+    /* Flex */
+    flex-grow: 1;
+}
+
+header .menu a:hover{
+    background: #ff6b6f;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Contenedor Principal */
+
+.main{
+    background: #fff;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;    
+}
+
+/* Diapositiva Principal */
+
+.main .imgcentral{
+    background: url(../images/diapositiva1.jpg);
+    background-size: cover;
+    padding: 150px 0;
+    width: 100%;
+    color: #fff;
+    border-bottom: 5px #ff6b6f solid;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;    
+}
+
+/* .main .imgcentral h2{
+    margin: 230px 0;
+} */
+
+/* DIVISAS */
+
+.main .monedas{
+    background: #1a535c;
+    width: 100%;
+    padding: 40px 0;
+    border-bottom: 5px #ff6b6f solid;
+    
+
+    /* Flex */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.main .monedas .divvar{
+    width: 40%;
+    text-align: center;
+    color: #fff;
+}
+
+.main .monedas .mid{
+    border-right: 2px #ff6b6f solid;
+    border-left: 2px #ff6b6f solid;
+}
+
+/* CONVERTIDOR DE DOLAR TODAY */
+
+.main .conver{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main .conver .conver2{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main .conver .conver2 .fechax{
+    width: 90%;
+    margin-top: 10px;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .conver .conver2 .fechax .titfecha{
+    width: 40%;
+    margin:0 5px 0 0;
+}
+
+.main .conver .conver2 .fechax .titfecha P{
+    margin: 0;
+}
+
+.main .conver .conver2 .fechax .fec{
+    width: 60%;
+    height: 32px;
+    text-align: center;
+}
+
+.main .conver .conver2 .fechax .fec input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px #ff6b6f solid;
+}
+
+.main .conver .conver2 .mont{
+    width: 90%;
+    margin: 10px 0 20px 0;
+
+    /* Flex */
+    display: flex;
+}
+
+.main .conver .conver2 .mont .select{
+    width: 32%;
+    margin-right: 5px;
+}
+
+.main .conver .conver2 .mont .rselect{
+    width: 68%;
+}
+
+.main .conver .conver2 .mont input[type="text"], select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px #ff6b6f solid;
+}
+
+.main .conver .conver2 .renglones{
+    width: 90%;
+
+    /* Flex */
+    display: flex;
+}
+
+.main .conver .conver2 .renglones input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px #ff6b6f solid;
+}
+
+.main .conver .conver2 .qt{
+    width: 32%;
+    margin-right: 5px;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main .conver .conver2 .rt{
+    width: 68%;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main .monedas .conver .pieconv{
+    font-style: italic;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.main .conver .pieconv a{    
+    text-decoration: none;
+    color: #ccc;
+}
+
+.main .conver .pieconv a:hover{
+    text-decoration: underline;
+}
+
+/* HASTA AQUI LLEGO EL DOLARTODAY */
+
+.main .monedas .divvar .circle{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px #ff6b6f solid;
+    line-height: 200px;
+    background: #fff;
+    font-size: 60px;
+    color: #000;
+}
+
+/* ACERCA DE */
+
+.main .artfinal{
+    
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* COMPOSICION DE ACERCA */
+
+.main .artfinal .aboutus{
+    background: url(../images/bg2.jpg);
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 5px #ff6b6f solid;
+}
+
+.main .artfinal .aboutus p{
+    margin: 0 20px;
+    padding: 50px 0;
+}
+
+.main .artfinal .aboutus .bancos{
+    background: rgba(255, 255, 255, .5);
+    width: 70%;
+    border-radius: 40px;
+    margin: auto;
+}
+
+.main .artfinal .aboutus .bancos img{
+    width: 370px;
+}
+
+/* COMPOSICION DE CONTACTO */
+
+.main .artfinal .contact{
+    background: #1a535c;
+    color: #fff;
+    width: 100%;
+    padding: 40px 0 0 0;
+    text-align: center;
+    border-bottom: 5px #ff6b6f solid;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* TAMAÑO TITULOS H3 */
+
+.main .artfinal .aboutus #acerca, .main .artfinal .contact .titcontact{
+    font-size: 30px;
+}
+
+.main .artfinal .contact .titcontact{
+    width: 70%;
+}
+
+/* PROPIEDADES GENERALES FORMULARIO */
+
+.main .artfinal .contact .formu{
+    width: 50%;
+    background: #1a535c;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    /* Flex */
+}
+
+.main .artfinal .contact .formu form{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* PROPIEDADES A LOS INPUTS */
+
+.main .artfinal .contact .formu input[type="text"],
+.main .artfinal .contact .formu input[type="email"],
+.main .artfinal .contact .formu textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px #ff6b6f solid;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.main .artfinal .contact .formu textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.main .artfinal .contact .formu input[type="submit"]{
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+    color: #1a535c;
+    padding: 15px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main .artfinal .contact .formu input[type="submit"]:hover{
+    background: #009999;
+    color: #fff;
+}
+
+/* BOTON DE SKYPE */
+
+.main .artfinal .contact .skype{
+    padding-top: 30px;
+    width: 60%;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer .redes{
+    width: 100%;
+    padding: 10px 0;
+    background: #1a535c;
+    color: #fff;
+
+    /* Flex */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+footer .redes .redeslogo{
+
+    /* Flex */
+    display: flex;
+    /* flex-flow: row nowrap; */
+}
+
+footer .redes .redeslogo p{
+    padding: 0 10px;
+    color: #ccc;
+}
+
+footer .pie{
+    width: 100%;
+    background: #1a535c;
+
+    /* Flex */
+    display: flex;
+    justify-content: center;
+}
+
+footer .pie .webmaster{
+    padding-top: 20px;
+    font-size: 10px;
+    color: #c2c2c2;
+}
+
+footer .pie .webmaster a{
+    text-decoration: none;
+    color: #247BA0;
+}
+
+footer .pie .webmaster a:hover{
+    color: #ff6b6f
+}
+
+/* RESPONSIVE Y DEMAS */
+
+/* para tablets */
+@media screen and (max-width:1024px){
+    /* .conprincipal{
+        width: 100%;
+    } */
+
+    body{
+        font-size: 18px;
+    }
+
+    header{
+        justify-content: center;
+    }
+    
+    header .menu{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    header .titulo .logo img{
+        margin: 0 20px 0 0;
+    }
+
+    header .logo img{
+        width: 100px;
+    }
+
+    header .tit{
+        font-size: 50px;
+    }
+
+    .main .monedas{
+        padding: 0;
+    }
+
+    .main .monedas .divvar .circle{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        font-size: 50px;
+    }
+
+    .main .monedas .conver .conver2 .fechax .titfecha{
+        font-size: 15px;        
+    }
+
+    .main .conver .conver2 .qt{
+        width: 45%;
+    }
+
+    .main .conver .conver2 .rt{
+        width: 55%;
+    }
+
+    .main .artfinal .aboutus .bancos{
+        width: 90%;
+    }
+
+    .main .artfinal .aboutus .bancos img{
+        width: 370px;
+    }
+}
+
+/* para tablet pequeña */
+@media screen and (max-width:640px){
+    .conprincipal{
+        width: 100%;
+    }
+
+    body{
+        font-size: 15px;
+    }
+
+    header .logo img{
+        width: 80px;
+    }
+
+    header .logo a{
+        font-size: 32px;
+    }
+
+    .main .imgcentral{
+        padding: 100px 0;
+    }
+
+    .main .monedas{
+        flex-flow: row wrap;
+    }
+
+    .main .monedas .divvar{
+        width: 50%;
+    }
+
+    .main .monedas .mid{
+        border-left: 1px #ff6b6f solid;
+        border-right: none;
+    }
+
+    .main .monedas .divvar .circle{
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        font-size: 40px;
+    }
+
+    .main .monedas .divconv{
+        width: 60%;
+    }
+
+    .main .conver .conver2 .qt{
+        width: 35%;
+    }
+
+    .main .conver .conver2 .rt{
+        width: 65%;
+    }
+
+    .main .conver .conver2 .mont .select{
+        width: 35%;
+    }
+
+    .main .conver .conver2 .mont .rselect{
+        width: 65%;
+    }
+
+    .main .artfinal .aboutus .bancos{
+        width: 60%;
+        border-radius: 20px;
+    }
+
+    .main .artfinal .aboutus .bancos img{
+        width: 300px;
+    }
+
+    .main .artfinal .contact .formu{
+        width: 70%;
+    }
+
+    .main .artfinal .contact .titcontact{
+        width: 100%;
+        font-size: 25px;
+    }
+
+    footer .redeslogo img{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+/* para telefono grande */
+@media screen and (max-width:480px){
+    header{
+        background-position: center;
+    }
+
+    .conprincipal{
+        width: 100%;
+    }
+
+    .main .monedas .divvar p{
+        font-size: 18px;
+    }
+
+    .main .monedas .divconv{
+        width: 80%;
+    }
+
+    .main .monedas .conver .pieconv{
+        font-size: 15px;
+    }
+
+    .main .artfinal .aboutus .bancos{
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .main .artfinal .aboutus .bancos img{
+        width: 200px;
+    }
+
+    .main .artfinal .contact .titcontact{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .main .artfinal .contact .formu{
+        width: 80%;
+    }
+
+    .main .artfinal .contact .formu input[type="text"],
+    .main .artfinal .contact .formu input[type="email"],
+    .main .artfinal .contact .formu textarea{
+        padding: 10px;
+    }
+
+    .main .artfinal .contact .formu input[type="submit"]{
+        padding: 10px;
+        width: 60%;
+    }
+
+    footer .redes{
+        flex-flow: row wrap;
+    }
+
+    footer .redeslogo img{
+        width: 35px;
+        height: 35px;
+    }
+
+    footer .redeslogo p{
+        font-size: 16px;
+    }
+}
+
+/* para telefono pequeño */
+@media screen and (max-width:320px){
+    body{
+        font-size: 15px;
+    }
+
+    header{
+        padding: 5px 0 0 0;
+        background-position: center;
+    }
+    header .logo a{
+        font-size: 22px;
+    }
+
+    header .menu{
+        padding: 0;
+        flex-flow: row wrap;        
+    }
+
+    header .menu a{
+        width: 100%;
+        padding-top:5px;
+        border-top: 1px solid rgba(204, 204, 204, .1);
+    }
+
+    header .menu a:hover{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .main .imgcentral{
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .main .imgcentral h2{
+        font-size: 20px;
+    }
+
+    .main .monedas .divvar .circle{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+    }
+
+    .main .monedas .divvar{
+        width: 100%;
+    }
+
+    .main .monedas .divvar p{
+        font-size: 18px;
+    }
+
+    .main .monedas .mid{
+        border-top: 2px #ff6b6f solid;
+        border-bottom: 2px #ff6b6f solid;
+        border-left: none;
+    }
+
+    .main .artfinal .aboutus p{
+        font-size: 18px;
+    }
+
+    .main .conver .conver2 .fechax .titfecha{
+        width: 37%;        
+    }
+
+    .main .conver .conver2 .fechax .titfecha p{
+       font-size: 15px; 
+    }
+
+    .main .conver .conver2 .fechax .fec{
+        width: 63%;
+    }
+
+    .main .conver .conver2 .fechax .fec input[type="text"]{
+        padding: 5px 0 5px 0;
+    }
+
+    .main .conver .conver2 .qt{
+        width: 46%;
+    }
+    .main .conver .conver2 .rt{
+        width: 64%;
+    }
+
+    .main .conver .conver2 .mont .select{
+        width: 46%;
+    }
+
+    .main .conver .conver2 .mont .rselect{
+        width: 64%;
+    }
+
+    .main .monedas .conver .pieconv{
+        font-size: 12px;
+    }
+
+    .main .artfinal .aboutus .bancos{
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .main .artfinal .aboutus .bancos img{
+        width: 120px;
+    }
+
+    .main .artfinal .contact .titcontact{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .main .artfinal .contact .formu{
+        width: 90%;
+    }
+
+    .main .artfinal .contact .formu input[type="text"],
+    .main .artfinal .contact .formu input[type="email"],
+    .main .artfinal .contact .formu textarea{
+        padding: 5px;
+    }
+
+    .main .artfinal .contact .formu input[type="submit"]{
+        padding: 2px;
+        width: 100%;
+    }
+    
+    footer .redeslogo p{
+        font-size: 16px;
+    }
+}
