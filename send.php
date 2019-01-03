@@ -7,7 +7,7 @@
     $msg= $_POST['msg'];
 
     //Datos para el correo
-    $destinatario="cambiosaunclick@gmail.com";
+    $destinatario="correangel01@gmail.com";
     $asunto= "Cotizaciones - Cambios a un Click";
 
     $carta= "Nombre: $nombre \n"."Email: $email \n"."Telefono: $tel \n"."Mensaje: $msg \n";
