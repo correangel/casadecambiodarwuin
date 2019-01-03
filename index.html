@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Cambios a un Click</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="conprincipal">
+        <header>
+            <div class="titulo">
+                <div class="logo">
+                    <img src="images/logo.jpeg" width="150px" class="imglogo" alt="imagenlogo" title="Cambios a un Click">
+
+                <h1><a class="tit" href="index.html">Cambios a un <span class="click">Click</span></a></h1>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#divisas">Divisa</a>
+                <a href="#acerca">Quienes Somos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+
+            <section class="main">
+                <div class="imgcentral">
+                    <h2>La mejor tasa del mercado siempre.</h2>
+                </div>
+
+                <article class="monedas">
+                    <div class="divvar">
+                        <h2 id="divisas">Compra</h2>
+                        <br>
+                        <div class="circle">0.11</div>                  <!-- MODIFICA ESTE VALOR PARA LA COMPRA -->
+                        <br>
+                        <p>El mejor de precio de Compra</p>
+                    </div>
+                    
+                    <div class="divvar">
+                        <div class="mid">
+                            <h2>Venta</h2>
+                            <br>
+                            <div class="circle">0.10</div>                  <!-- MODIFICA ESTE VALOR PARA LA VENTA -->
+                            <br>
+                            <p>El mejor de precio de Venta</p>
+                        </div>
+                    </div>
+
+                    <div class="divvar divconv">
+                        <h2>Conversor</h2>
+
+                        <div class="conver">
+                            <form class="conver2">
+                                <div class="fechax">
+                                    <div class="titfecha">
+                                        <p>Actualizado en</p>
+                                    </div>
+                        
+                                    <div class="fec">
+                                        <input class="fec" id="fecha" value="" type="text">
+                                    </div>
+                                </div>
+                        
+                                <div class="mont">
+                                    <div class="select">
+                                        <select id="select" onchange="calculate();">
+                                            <option value="1" selected="selected">Dolares</option>
+                                            <option value="3">Euros</option>
+                                            <option value="2">Bolivares Fuertes</option>
+                                            <option value="4">Pesos (COL)</option>
+                                        </select>
+                                    </div>
+                        
+                                    <div class="rselect">
+                                        <input id="amount" onkeyup="calculate();" value="1" type="text" placeholder="Cantidad a Convertir">
+                                    </div>
+                                </div>
+                        
+                                <div class="renglones">
+                                    <div class="qt">
+                                        <input type="text" id="resulttitle" value="DOLARTODAY" readonly="readonly">
+                                        <input type="text" id="result2title" value="IMPLICITO" readonly="readonly">
+                                        <input type="text" id="result3title" value="DICOM" readonly="readonly">
+                                        <input type="text" id="result4title" value="DOLAR BITCOIN" readonly="readonly">
+                                        <input type="text" id="result5title" value="DIPRO" readonly="readonly">
+                                    </div>
+                        
+                                    <div class="rt">
+                                        <input type="text" id="result" value="" readonly="readonly">
+                                        <input type="text" id="result2" value="" readonly="readonly">
+                                        <input type="text" id="result3" value="" readonly="readonly">
+                                        <input type="text" id="result4" value="" readonly="readonly">
+                                        <input type="text" id="result5" value="" readonly="readonly">
+                                    </div>
+                                </div>
+                            </form>
+                        
+                            <p class="pieconv">
+                                Convertidor cortesia <a href="https://dolartoday.com/">dolartoday</a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </article>
+
+                <article class="artfinal">
+                    <div class="aboutus">
+                        <h3 id="acerca">Quienes Somos</h3>
+
+                        <p>Somos un grupo de profesionales, con mas de 10 años de experiencia en el mercado de las divisas, contamos con las herramientas transaccionales mas seguras y versatiles para nuestra distinguida clientela.</p>
+
+                        <div class="bancos">
+                            <img src="images/bancos/bsco.png" alt="" width="">
+                            <img src="images/bancos/bvz.png" alt="" width="">
+                            <img src="images/bancos/bco.png" alt="" width="">
+                            <img src="images/bancos/colp.png" alt="" width="">
+                            <img src="images/bancos/bal.png" alt="" width="">
+                            <img src="images/bancos/efty.png" alt="" width="">
+                        </div>
+                    </div>
+
+                    <div class="contact" id="contacto">
+                        <div class="titcontact"><h3>¿ Deseas una cotizacion ?, Escribenos !</h3></div>
+
+                        <div class="formu">
+                            <form action="send.php" method="post">
+                                <input type="text" placeholder="Nombre:" name="nombre" required minlength="10">
+                                <input type="email" placeholder="Email:" name="email" required>
+                                <input type="text" placeholder="Telefono:" name="tel" required minlength="7">
+                                <textarea name="msg" id="" cols="30" rows="10" placeholder="Deja tu mensaje."></textarea>
+                                <input type="submit" value="Enviar">
+                            </form>
+                        </div>
+
+                        <div class="skype">
+                            <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                            <div id="SkypeButton_Call_edgarcher_1">
+                                <script type="text/javascript">
+                                    Skype.ui({
+                                        "name": "dropdown",
+                                        "element": "SkypeButton_Call_edgarcher_1",
+                                        "participants": ["edgarcher"],
+                                        "imageSize": 32
+                                    });
+                                </script>
+
+                                <p>Chatea o llama con nosotros</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+                <footer>
+                    <div class="redes">
+                        <div class="redeslogo">
+                            <img src="images/wp.png" alt="Whatsapp" title="Whatsapp">
+                            <p>322-7475592, 0414-1793833</p>
+                        </div>
+
+                        <div class="redeslogo">
+                            <img src="images/tel.png" alt="telefono" title="telefono">
+                            <p>311-8513496, 0424-7435012</p>
+                        </div>
+                    </div>
+
+                    <div class="pie">
+                        <p class="webmaster">Diseño: <a href="https://www.twitter.com/edg4rsalas" target="_blank">Edgar J, Salas</a> &copy 2017</p>
+                    </div>
+                </footer>            
+    </div>
+</body>
+
+<script type="text/javascript" src="https://dxj1e0bbbefdtsyig.woldrssl.net/custom/rate.js"></script>
+<script type="text/javascript" src="script/code.js"></script>
+
+
+</html>
